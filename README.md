@@ -38,12 +38,3 @@ Os caminhões são classificados da seguinte forma:
 ## Resultados Esperados
 - **Redução dos custos:** Ao prever falhas e otimizar a manutenção, espera-se uma redução no número de manutenções corretivas, resultando em economia significativa.
 - **Identificação dos fatores principais:** Apresentar uma lista dos principais indicadores de falhas no sistema de ar para facilitar ações preventivas.
-
-## Requisitos para Execução
-- Python 3.x
-- Bibliotecas necessárias: pandas, numpy, scikit-learn, xgboost, matplotlib, seaborn
-
-Instale as dependências via `pip`:
-
-```bash
-pip install -r requirements.txt
