@@ -36,5 +36,5 @@ Os caminhões são classificados da seguinte forma:
 5. **Análise dos Fatores de Risco:** Identificação dos principais fatores que indicam uma possível falha no sistema de ar.
 
 ## Resultados
-- **Análise dos fatores influentes**: Realizamos a análisa dos fatores que mais explicavam a variabilidade do conjunto através dos componentes principais encontrados.
+- **Análise dos fatores influentes**: Realizamos a análise dos fatores que mais explicavam a variabilidade do conjunto através dos componentes principais encontrados.
 - **Redução de gastos para a empresa**: Ao criar o modelo de classificação, conseguimos obter, no dataset do present_year, uma economia de mais de $160.000,00.
