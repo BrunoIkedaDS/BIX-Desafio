@@ -1,7 +1,7 @@
 # Projeto de Redução de Custos de Manutenção do Sistema de Ar de Caminhões
 
 ## Descrição do Projeto
-Este projeto tem como objetivo reduzir os custos de manutenção do sistema de ar de uma empresa de transporte, utilizando técnicas de Inteligência Artificial (IA) para identificar e prever possíveis falhas no sistema. A empresa vem notando um aumento significativo nas despesas relacionadas à manutenção desse sistema nos últimos três anos, mesmo mantendo o tamanho da frota relativamente constante. Com base nos dados históricos e atuais, nossa meta é otimizar os processos de manutenção e evitar reparos corretivos caros.
+Este projeto tem como objetivo reduzir os custos de manutenção do sistema de ar de uma empresa de transporte, utilizando técnicas de Machine Learning para identificar e prever possíveis falhas no sistema. A empresa vem notando um aumento significativo nas despesas relacionadas à manutenção desse sistema nos últimos três anos, mesmo mantendo o tamanho da frota relativamente constante. Com base nos dados históricos e atuais, nossa meta é otimizar os processos de manutenção e evitar reparos corretivos caros.
 
 ## Problema
 A empresa está enfrentando três tipos de custos relacionados à manutenção do sistema de ar:
@@ -12,7 +12,7 @@ A empresa está enfrentando três tipos de custos relacionados à manutenção d
 A falta de uma abordagem preditiva tem levado a um aumento de manutenções corretivas, que são consideravelmente mais caras. 
 
 ## Objetivos
-1. **Reduzir os custos de manutenção do sistema de ar utilizando técnicas de IA.**
+1. **Reduzir os custos de manutenção do sistema de ar utilizando técnicas de Machine Learning.**
 2. **Identificar os principais fatores que indicam falhas no sistema de ar.**
 3. **Avaliar o modelo preditivo com os dados do ano corrente para apresentar resultados que possam convencer a diretoria a expandir a solução para outros sistemas de manutenção.**
 
@@ -30,11 +30,11 @@ Os caminhões são classificados da seguinte forma:
 
 ## Metodologia
 1. **Análise Exploratória de Dados (EDA):** Analisamos os dados fornecidos, identificando possíveis valores ausentes e padrões.
-2. **Pré-processamento dos Dados:** Tratamento de dados faltantes e codificados, além da normalização/transformação de colunas quando necessário.
-3. **Treinamento de Modelos Preditivos:** Testamos diferentes algoritmos de machine learning (Regressão Logística, Random Forest, XGBoost, etc.) para identificar falhas no sistema de ar.
+2. **Pré-processamento dos Dados:** Tratamento de dados faltantes e codificados, além da normalização/transformação de colunas quando necessário. Por fim, a aplicação de redução de dimensionalidade com PCA.
+3. **Treinamento de Modelos Preditivos:** Testamos diferentes algoritmos de machine learning (Regressão Logística, Random Forest, etc.) para identificar falhas no sistema de ar. Focamos em um alto recall pois o custo dos falsos negativos era altíssimo. Portanto o trade-off optando por um recall alto ao invés de uma alta precision foi necessário.
 4. **Avaliação de Performance:** Utilizamos o arquivo `air_system_present_year.csv` para avaliar o desempenho final do modelo.
 5. **Análise dos Fatores de Risco:** Identificação dos principais fatores que indicam uma possível falha no sistema de ar.
 
-## Resultados Esperados
-- **Redução dos custos:** Ao prever falhas e otimizar a manutenção, espera-se uma redução no número de manutenções corretivas, resultando em economia significativa.
-- **Identificação dos fatores principais:** Apresentar uma lista dos principais indicadores de falhas no sistema de ar para facilitar ações preventivas.
+## Resultados
+- **Análise dos fatores influentes**: Realizamos a análisa dos fatores que mais explicavam a variabilidade do conjunto através dos componentes principais encontrados.
+- **Redução de gastos para a empresa**: Ao criar o modelo de classificação, conseguimos obter, no dataset do present_year, uma economia de mais de $160.000,00.
